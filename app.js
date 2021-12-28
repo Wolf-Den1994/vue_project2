@@ -1,9 +1,4 @@
 Vue.createApp({
-  // data() {
-  //   return {
-  //
-  //   }
-  // }
   data: () => ({
     title: 'Я есть Грут'
   })
