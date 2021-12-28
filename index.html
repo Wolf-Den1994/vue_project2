@@ -9,7 +9,10 @@
 <body>
 <div class="container pt-5" id="app">
   <div class="card center">
-    <h1 v-text="title"></h1>
+    <h2 v-text="title"></h2>
+    <h2 v-once>{{ title }}</h2>
+
+    <button v-on:click="title = 'text'" class="btn">Изменить</button>
   </div>
 </div>
 
