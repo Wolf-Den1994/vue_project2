@@ -20,7 +20,7 @@
 <!--    <h2 v-pre>{{ title }}</h2>-->
 
 <!--    <button v-on:click="title = 'text'" class="btn">Изменить</button>-->
-    <ul class="list">
+    <ul class="list" v-if="items.length">
 <!--      <li class="list-item" v-for="(item, idx) in 7">-->
 <!--        <strong>{{ idx }}</strong> - {{ item }}-->
 <!--      </li>-->
@@ -35,6 +35,7 @@
           <strong>{{ item }}</strong>
         </li>
     </ul>
+    <h3 v-show="!items.length">Элементов нет!</h3>
   </div>
 </div>
 
