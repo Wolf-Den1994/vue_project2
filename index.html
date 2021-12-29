@@ -31,8 +31,10 @@
           class="list-item"
           v-for="(item, idx) in items"
           @click="items.splice(idx, 1)"
+          :key="item"
         >
-          <strong>{{ item }}</strong>
+          <strong>{{ item }}</strong>&nbsp;
+          <input type="text" @click.stop>
         </li>
     </ul>
     <h3 v-show="!items.length">Элементов нет!</h3>
